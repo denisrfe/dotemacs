@@ -1,0 +1,13 @@
+* Tasks
+** DONE Configurar o JumpBox
+*** DONE Realizar teste de conexão
+*** DONE Subir o Jumpbox
+*** DONE Aplicar o checklist de segurança
+*** DONE Configurar o Puppet Bolt
+** STOPPED Conexão VPN para TS
+*** STOPPED Verificar como funciona a criação de VPN no Oracle Cloud
+*** STOPPED Documentar processo de configuração da VPN
+** TODO Realizar configuração do Grafana
+*** TODO Configurar tela de host
+*** TODO Configurar tela de RDS
+*** TODO Configurar Stack
