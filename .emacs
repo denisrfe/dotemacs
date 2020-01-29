@@ -1,3 +1,4 @@
+
 ;; Added by Package.el.  This must come before configurations of
 ;; installed packages.  Don't delete this line.  If you don't want it,
 ;; just comment it out by adding a semicolon to the start of the line.
@@ -13,7 +14,7 @@
  '(display-battery-mode t)
  '(package-selected-packages
    (quote
-    (tramp company-terraform company terraform-mode hcl-mode puppet-mode material-theme)))
+    (docker-compose-mode ghub+ tramp company-terraform company terraform-mode hcl-mode puppet-mode material-theme)))
  '(scroll-bar-mode nil)
  '(tool-bar-mode nil)
  '(tooltip-mode nil))
@@ -32,7 +33,7 @@
   (require 'package)
   (add-to-list
    'package-archives
-   ;; '("melpa" . "http://stable.melpa.org/packages/") ; many packages won't show if using stable
+   ;;'("melpa" . "http://stable.melpa.org/packages/") ; many packages won't show if using stable
    '("melpa" . "http://melpa.milkbox.net/packages/")
    t))
 
@@ -41,7 +42,14 @@
 ;; package-install RET material-theme
 (load-theme 'material t)
 
+;; MAGIT MODE
+;; package-install RET magit
+;; To solve bug wrong number of arguments we must delete the ghub directory under .emacs.d and reinstall ghub and magit
+;;(require 'magit)
 
+;; DOCKER-COMPOSE MODE
+;; package-install RET docker-compose-mode
+(require 'docker-compose-mode)
 ;; PUPPET MODE
 ;; package-install RET puppet-mode
 (require 'puppet-mode)
