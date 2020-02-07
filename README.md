@@ -57,19 +57,19 @@ This configuration comes with following emacs packages:
 M-x dired is the emacs file management
 
 Most useful commands:
-- Enter -> Open file or directory
-- q -> Done. Quit
-- C -> Copy file
-- R -> Rename/move file
-- D -> Delete file or directory
-- + -> Create new directory
-- Z -> Compress/decompress the file by gzip
-- m -> Mark a file
-- u -> Unmark a file
-- %-m -> Mark by pattern (regex). For example, for mark all html files type %-m then \.html$
-- g -> Refresh dir listing
-- > -> Move cursor to next subdirectory
-- < -> Move cursor to previous subdirectory
+- Enter Open file or directory
+- q Done. Quit
+- C Copy file
+- R Rename/move file
+- D Delete file or directory
+- + Create new directory
+- Z Compress/decompress the file by gzip
+- m Mark a file
+- u Unmark a file
+- %-m Mark by pattern (regex). For example, for mark all html files type %-m then \.html$
+- g Refresh dir listing
+- > Move cursor to next subdirectory
+- < Move cursor to previous subdirectory
 
 
 
