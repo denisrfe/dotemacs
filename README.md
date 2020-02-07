@@ -27,10 +27,12 @@ This configuration comes with following emacs packages:
 # Contents
 
 * [Emacs Keybindings](#emacs-keybindings)
-
+  * [File Operations](#file-operations)
+  * [Copy, Paste, Undo](#copy-paste-undo)
+  
 ## Emacs Keybindings
 
-### Open, Save, Close, File
+### File Operations
 - `C-x C-f` Open file
 - `C-x C-`s Save
 - `C-x k` Kill buffer
