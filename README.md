@@ -32,6 +32,10 @@ This configuration comes with following emacs packages:
   * [Split window](#split-window)
 * [Dired Mode](#dired-mode)
   * [Most Useful Commands](#most-useful-commands)
+* [EGG Mode](#egg-mode)
+  * [Install EGG](#install-egg)
+  * [Commit Files](#commit-files)
+  * [Common Key Bindings](#common-key-bindings)
 * [Define Alias](#define-alias)
 
 * [Useful Links](#useful-links)
@@ -81,12 +85,39 @@ Most useful commands:
 - `%-m` Mark by pattern (regex). For example, for mark all html files type %-m then `\.html$`
 - `g` Refresh dir listing
 
+## EGG Mode
+
+### Install EGG
+Install egg with M-x package-install RET egg
+Insert into your `.emacs` the line `(require 'egg)`
+
+### Commit files
+Type M-x egg-status, this show the Unstaged, Staged, Untracked and Stashed WIPs files.
+To stage a modified file go to them and type `s` or press `S` to stage all modified files.
+Press `c` to commit file, provide a commit message and press `C-c C-c` to exit
+Press `P` to push  to the upstream and press `q` to exit egg-mode.
+
+### Common Key Bindings
+
 ## Define alias
 To define alias on emacs use the defalias on `.emacs` file.
 For example, to define an alias to git-status command named git insert into `.emacs` file:
 `(defalias 'git 'egg-status)`
-
-
+`p` Previous block
+`n` next block
+`c` commit staged modifications
+`P` push to the upstream
+`j` pull from the upstream
+`l` show repo's history
+`S` stage all modifications
+`U` unstage all modifications
+`d` diff other revision
+`X` throw away ALL modifications
+`DEL` throw away file's modifications
+`h` hide/show blocks
+`H` Hide sub-blocks
+`G` Redisplay
+`q` quit
 
 
 
