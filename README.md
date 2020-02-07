@@ -27,47 +27,47 @@ This configuration comes with following emacs packages:
 ## Emacs Keybindings
 
 ### Open, Save, Close, File
-- C-x C-f Open file
-- C-x C-s Save
-- C-x k Kill buffer
+- `C-x C-f` Open file
+- `C-x C-`s Save
+- `C-x k` Kill buffer
 
 ### Copy Paste Undo
-- C-_ Undo
-- Alt-w Copy
-- C-w  Cut
-- C-y Paste
+- `C-_` Undo
+- `Alt-w` Copy
+- `C-w`  Cut
+- `C-y` Paste
 
 ### Deleting Text
-- Alt-d Delete the word to the right
-- Alt-backspace Delete the previous word
-- C-k Delete all characters from cursor to end of line
+- `Alt-d` Delete the word to the right
+- `Alt-backspace` Delete the previous word
+- `C-k` Delete all characters from cursor to end of line
 
 ### Select Text
-- C-Space Mark the starting point for cut/copy a text
-- C-x h Select all
+- `C-Space` Mark the starting point for cut/copy a text
+- `C-x h` Select all
 
 ### Split Window
-- C-x 2 Split window vertically
-- C-x 3 Split window horizontally
-- C-x 1 Remove all split panes
-- C-x o Move cursor to the next pane
+- `C-x 2` Split window vertically
+- `C-x 3` Split window horizontally
+- `C-x 1` Remove all split panes
+- `C-x o` Move cursor to the next pane
 
 
 ## Dired Mode
 M-x dired is the emacs file management
 
 Most useful commands:
-- Enter Open file or directory
-- q Done. Quit
-- C Copy file
-- R Rename/move file
-- D Delete file or directory
+- `Enter` Open file or directory
+- `q` Done. Quit
+- `C` Copy file
+- `R` Rename/move file
+- `D` Delete file or directory
 - `+` Create new directory
-- Z Compress/decompress the file by gzip
-- m Mark a file
-- u Unmark a file
-- %-m Mark by pattern (regex). For example, for mark all html files type %-m then \.html$
-- g Refresh dir listing
+- `Z` Compress/decompress the file by gzip
+- `m` Mark a file
+- `u` Unmark a file
+- `%-m` Mark by pattern (regex). For example, for mark all html files type %-m then `\.html$`
+- `g` Refresh dir listing
 
 ## How to define command alias
 To define alias on emacs use the defalias on `.emacs` file.
