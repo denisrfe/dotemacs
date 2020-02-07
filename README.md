@@ -124,4 +124,4 @@ For example, to define an alias to git-status command named git insert into `.em
 
 
 #### Useful links:
-- **http://ergoemacs.org/emacs/emacs_keys_basics.html
+- http://ergoemacs.org/emacs/emacs_keys_basics.html
