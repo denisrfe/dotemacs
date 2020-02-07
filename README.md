@@ -29,7 +29,15 @@ This configuration comes with following emacs packages:
 * [Emacs Keybindings](#emacs-keybindings)
   * [File Operations](#file-operations)
   * [Copy, Paste, Undo](#copy-paste-undo)
-  
+  * [Deleting text](#deleting-text)
+  * [Select text](#select-text)
+  * [Split window](#split-window)
+* [Dired Mode](#dired-mode)
+  * [Most Useful Commands](#most-useful-commands)
+* [Define Alias](#define-alias)
+
+* [Useful Links](#useful-links)
+
 ## Emacs Keybindings
 
 ### File Operations
@@ -43,7 +51,7 @@ This configuration comes with following emacs packages:
 - `C-w`  Cut
 - `C-y` Paste
 
-### Deleting Text
+### Deleting text
 - `Alt-d` Delete the word to the right
 - `Alt-backspace` Delete the previous word
 - `C-k` Delete all characters from cursor to end of line
@@ -75,7 +83,7 @@ Most useful commands:
 - `%-m` Mark by pattern (regex). For example, for mark all html files type %-m then `\.html$`
 - `g` Refresh dir listing
 
-## How to define command alias
+## Define alias
 To define alias on emacs use the defalias on `.emacs` file.
 For example, to define an alias to git-status command named git insert into `.emacs` file:
 `(defalias 'git 'egg-status)`
@@ -86,5 +94,5 @@ For example, to define an alias to git-status command named git insert into `.em
 
 
 
-#### Usefull links:
+#### Useful links:
 - **http://ergoemacs.org/emacs/emacs_keys_basics.html
