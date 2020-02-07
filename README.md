@@ -23,3 +23,21 @@ This configuration comes with following emacs packages:
 - Keyboard shotcuts
 - Icons on dired mode
 - Environment variables for terraform on Oracle Cloud
+
+## Emacs Keybindings
+
+### Open, Save, Close, File
+- C-x C-f Open file
+- C-x C-s Save
+- C-x k Kill buffer
+
+### Copy Paste Undo
+- C-_ Undo
+- Alt-w Copy
+- C-w  Cut
+- C-y Paste
+
+### Deleting Text
+- Alt-d Delete the word to the right
+- Alt-backspace Delete the previous word
+- C-k Delete all characters from cursor to end of line
