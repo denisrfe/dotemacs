@@ -26,7 +26,7 @@ This configuration comes with following emacs packages:
 
 # Contents
 
-* [Emacs Keybindings] (#emacs-keybindings)
+* [Emacs Keybindings](#emacs-keybindings)
 
 ## Emacs Keybindings
 
