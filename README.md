@@ -4,6 +4,22 @@
 
 This repository contains my `.emacs.d` directory and config files.
 
-To install this `.emacs.d` directory, simply rename dotemacs to .emacs and dotemacs.d to .emacs.d and move to your home directory.
+To install this `emacs.d` directory, simply rename emacs to .emacs and emacs.d to .emacs.d and move to your home directory.
 
 Inside file .emacs have the packages needed to configure properly.
+
+This configuration comes with following emacs packages:
+
+- MELPA Repository enabled
+- Material Theme to dark mode
+- EGG (Emacs Got Git)
+- Docker compose mode
+- Puppet mode
+- Terraform mode
+- Company mode for autocomplete
+- MPG123 to listen music
+- Backup files disabled
+- Some command alias
+- Keyboard shotcuts
+- Icons on dired mode
+- Environment variables for terraform on Oracle Cloud
