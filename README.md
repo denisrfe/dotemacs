@@ -1,6 +1,6 @@
 <div align=center><a href="https://github.com/emacs-tw/awesome-emacs"><img alt="Emacs Logo" width="240" height="240" src="https://upload.wikimedia.org/wikipedia/commons/0/08/EmacsIcon.svg"></a></div>
 
-# Denis dotemacs
+# DotEmacs Denis Rodrigues
 
 This repository contains my `.emacs.d` directory and config files.
 
@@ -68,9 +68,11 @@ Most useful commands:
 - u Unmark a file
 - %-m Mark by pattern (regex). For example, for mark all html files type %-m then \.html$
 - g Refresh dir listing
-- > Move cursor to next subdirectory
-- < Move cursor to previous subdirectory
 
+## How to define command alias
+To define alias on emacs use the defalias on `.emacs` file.
+For example, to define an alias to git-status command named git insert into `.emacs` file:
+`(defalias 'git 'egg-status)`
 
 
 
