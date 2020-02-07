@@ -25,6 +25,7 @@ This configuration comes with following emacs packages:
 - Environment variables for terraform on Oracle Cloud
 
 # Contents
+
 * [Emacs Keybindings] (#emacs-keybindings)
 
 ## Emacs Keybindings
