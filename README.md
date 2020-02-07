@@ -62,7 +62,7 @@ Most useful commands:
 - C Copy file
 - R Rename/move file
 - D Delete file or directory
-- + Create new directory
+- `+` Create new directory
 - Z Compress/decompress the file by gzip
 - m Mark a file
 - u Unmark a file
