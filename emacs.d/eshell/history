@@ -1,0 +1,24 @@
+kubectl get nodes
+kubectl apply -f checkmk-data-persistentvolumeclaim.yaml
+kubectl apply -f checkmk-deployment.yaml 
+kubectl apply -f checkmk-service.yaml 
+kubectl get pods
+watch "kubectl logs -f checkmk-6695f97659-2tnqr"
+terraform plan
+git pull
+exit
+g status
+git status
+git pull
+exit
+terraform plan
+terraform plan
+terraform apply --auto-approve
+terraform plan
+terraform appy --auto-approve
+terraform appy --auto-approve
+terraform apply --auto-approve
+terraform plan
+terraform apply --auto-approve
+terraform plan
+exit
