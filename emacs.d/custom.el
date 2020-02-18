@@ -111,6 +111,7 @@
 (global-set-key (kbd "C-+") 'text-scale-increase)
 (global-set-key (kbd "C--") 'text-scale-decrease)
 (global-set-key [(control z)] 'undo)
+(global-set-key (kbd "C-c C-c") 'other-window)
 
 ;; PAIR () {} []
 (electric-pair-mode 1)
@@ -142,11 +143,11 @@
 (set-frame-font "Hack 10" nil t)
 
 ;; ENVIRONMENT VARIABLES FOR ORACLE CLOUD
-;;(setenv "TF_VAR_tenancy_ocid" "XXXX")
-;;(setenv "TF_VAR_compartment_ocid" "XXXX")
-;;(setenv "TF_VAR_user_ocid" "XXXX")
-;;(setenv "TF_VAR_fingerprint" "XXXX")
-;;(setenv "TF_VAR_private_key_path" "XXXX")
+(setenv "TF_VAR_tenancy_ocid" "ocid1.tenancy.oc1..aaaaaaaam4zvb7w5yl5yyebcfn6524bdriiz7tcc4zqqesoci3zo65dtqe3a")
+(setenv "TF_VAR_compartment_ocid" "ocid1.compartment.oc1..aaaaaaaahuf2n3n5o35l2db4nxgq2uxhk4erud2g6432d37un47ol7jhyqoq")
+(setenv "TF_VAR_user_ocid" "ocid1.user.oc1..aaaaaaaa7xjz5tjbvin3ck6ldaihqz46clod6ybj5gvnmg65typxxmbjlavq")
+(setenv "TF_VAR_fingerprint" "18:92:a3:fb:e4:51:a1:ee:02:8e:a6:3c:4c:11:a2:4c")
+(setenv "TF_VAR_private_key_path" "/home/denisrfe/.ssh/mgeweb.pem")
 
 ;; FUNCTION TO OPEN SHELL 
 (defun open-shell ()
@@ -162,4 +163,3 @@
   (when (not (one-window-p))
     (delete-window)))
 (advice-add 'eshell-life-is-too-much :after 'close-shell)
-
