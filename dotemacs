@@ -10,19 +10,51 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
-;; '(inhibit-startup-screen t)
+ '(ansi-color-faces-vector
+   [default bold shadow italic underline bold bold-italic bold])
+ '(ansi-color-names-vector
+   (vector "#ffffff" "#f36c60" "#8bc34a" "#fff59d" "#4dd0e1" "#b39ddb" "#81d4fa" "#263238"))
+ '(column-number-mode t)
+ '(custom-safe-themes
+   (quote
+    ("b3697d12fb7c087e1337432be92026b5fd218e7e43277918c0fce680d573a90c" default)))
+ '(display-battery-mode t)
+ '(fci-rule-color "#37474f")
+ '(hl-sexp-background-color "#1c1f26")
  '(package-selected-packages
    (quote
-    (company-terraform company terraform-mode hcl-mode puppet-mode material-theme)))
+    (all-the-icons-dired vscode-icon vscdark-theme docker-compose-mode ghub+ tramp company-terraform company terraform-mode hcl-mode puppet-mode material-theme)))
  '(scroll-bar-mode nil)
  '(tool-bar-mode nil)
- '(tooltip-mode nil))
+ '(tooltip-mode nil)
+ '(vc-annotate-background nil)
+ '(vc-annotate-color-map
+   (quote
+    ((20 . "#f36c60")
+     (40 . "#ff9800")
+     (60 . "#fff59d")
+     (80 . "#8bc34a")
+     (100 . "#81d4fa")
+     (120 . "#4dd0e1")
+     (140 . "#b39ddb")
+     (160 . "#f36c60")
+     (180 . "#ff9800")
+     (200 . "#fff59d")
+     (220 . "#8bc34a")
+     (240 . "#81d4fa")
+     (260 . "#4dd0e1")
+     (280 . "#b39ddb")
+     (300 . "#f36c60")
+     (320 . "#ff9800")
+     (340 . "#fff59d")
+     (360 . "#8bc34a"))))
+ '(vc-annotate-very-old-color nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
+ '(default ((t (:family "Hack" :foundry "simp" :slant normal :weight normal :height 98 :width normal)))))
 
 ;; ADD DIRECTORY .emacs.d/lisp/
 (add-to-list 'load-path "~/.emacs.d/lisp/")
@@ -32,7 +64,7 @@
   (require 'package)
   (add-to-list
    'package-archives
-   ;; '("melpa" . "http://stable.melpa.org/packages/") ; many packages won't show if using stable
+   ;;'("melpa" . "http://stable.melpa.org/packages/") ; many packages won't show if using stable
    '("melpa" . "http://melpa.milkbox.net/packages/")
    t))
 
@@ -41,7 +73,14 @@
 ;; package-install RET material-theme
 (load-theme 'material t)
 
+;; MAGIT MODE
+;; package-install RET magit
+;; To solve bug wrong number of arguments we must delete the ghub directory under .emacs.d and reinstall ghub and magit
+;;(require 'magit)
 
+;; DOCKER-COMPOSE MODE
+;; package-install RET docker-compose-mode
+(require 'docker-compose-mode)
 ;; PUPPET MODE
 ;; package-install RET puppet-mode
 (require 'puppet-mode)
@@ -67,6 +106,7 @@
 (require 'hcl-mode)
 (require 'terraform-mode)
 (add-hook 'terraform-mode-hook #'terraform-format-on-save-mode)
+(add-hook 'terraform-mode-hook #'company-terraform-init)
 
 
 ;; COMPANY MODE
@@ -105,10 +145,23 @@
 (defalias 'terminal 'eshell)
 (defalias 'erc 'irc)
 
+;; KEYBOARD SHOTCUTS
+(global-set-key [(control tab)] 'switch-to-next-buffer)
+(global-set-key [(C-iso-lefttab)] 'switch-to-prev-buffer)
+(global-set-key [(f11)] 'eshell)
+(global-set-key (kbd "C-+") 'text-scale-increase)
+(global-set-key (kbd "C--") 'text-scale-decrease)
+(global-set-key [(control z)] 'undo)
 
 ;; PAIR () {} []
 (electric-pair-mode 1)
 
+;; ALL-THE-ICONS
+;; package-install RET all-the-icons
+;; package-install RET all-the-icons-dired
+;; M-x all-the-icons-install-fonts
+(require 'all-the-icons)
+(add-hook 'dired-mode-hook 'all-the-icons-dired-mode)
 
 ;; DIRED MODE
 (setq dired-recursive-copies 'always)
@@ -147,3 +200,4 @@
 
 (setq transient-history nil)
 
+(require 'all-the-icons)
