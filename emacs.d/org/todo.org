@@ -1,0 +1,5 @@
+* Tasks
+** CLD-398 POC emparelhamento Amazon - Oracle Cloud 
+*** [[https://blogs.oracle.com/cloud-infrastructure/creating-a-secure-connection-between-oracle-cloud-infrastructure-and-other-cloud-providers][VPN Peering]]
+** CLD-397 Monitoramento Pro ativo da Infraestrutura
+** Remover peering da WMW no terraform

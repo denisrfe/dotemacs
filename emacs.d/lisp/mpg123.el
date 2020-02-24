@@ -1,8 +1,8 @@
 ;;; mpg123.el --- A front-end program to mpg123/ogg123 -*- coding: euc-jp -*-
 ;;; (c)1999-2019 by HIROSE Yuuji [yuuji>at<gentei.org]
 ;;; $Id: mpg123.el,v 1.61 2017/02/21 08:06:31 yuuji Exp yuuji $
-;;; Last modified Mon Nov  4 10:58:28 2019 on firestorm
-;;; Update count: 1387
+;;; Last modified Fri Jan 17 18:29:21 2020 on firestorm
+;;; Update count: 1390
 
 ;;; Commentary:
 ;;	
